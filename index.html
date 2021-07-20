@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,12 @@
     <title>Selectores</title>
     <style>
         body {
+            min-height: 100vh;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            align-items: center;
             font-size: 16px;
         }
 
@@ -15,120 +22,134 @@
         }
     </style>
 </head>
+
 <body>
-    <h1>Selectores</h1>
-    <p>Sirven para seleccionar un elementos HTML, tanto en CSS como en Javascript</p>
+    <main>
+        <h1>Selectores</h1>
+        <p>Sirven para seleccionar un elementos HTML, tanto en CSS como en Javascript</p>
 
-    <section>
-        <h2>Selector universal (*)</h2>
-        <p>Coincide con elementos de cualquier tipo</p>
-        <h3>CSS</h3>
-        <pre><code>* {
+        <section>
+            <h2>Selector universal (*)</h2>
+            <p>Coincide con elementos de cualquier tipo</p>
+            <h3>CSS</h3>
+            <pre><code>* {
     color: red;
 } </code></pre>
-        <h3>Javascript</h3>
-        <pre><code>document.querySelectorAll('*')</code></pre>
-        <a href="1-selector-universal.html">Ejemplo</a>
-    </section>
+            <h3>Javascript</h3>
+            <pre><code>document.querySelectorAll('*')</code></pre>
+            <a href="1-selector-universal.html">Ejemplo</a>
+        </section>
 
-    <section>
-        <h2>Selectores de tipo</h2>
-        <p>Coincide con elementos de cuyo nombre coincide con lo escrito</p>
-        <h3>CSS</h3>
-        <pre><code>div {
+        <section>
+            <h2>Selectores de tipo</h2>
+            <p>Coincide con elementos de cuyo nombre coincide con lo escrito</p>
+            <h3>CSS</h3>
+            <pre><code>div {
     color: red;
 } </code></pre>
-        <h3>Javascript</h3>
-        <pre><code>document.querySelectorAll('div')</code></pre>
-        <a href="2-selectores-de-tipo.html">Ejemplo</a>
-    </section>
+            <h3>Javascript</h3>
+            <pre><code>document.querySelectorAll('div')</code></pre>
+            <a href="2-selectores-de-tipo.html">Ejemplo</a>
+        </section>
 
-    <section>
-        <h2>Selectores de clase (.)</h2>
-        <p>Coincide con elementos que tienen las clases especificadas</p>
-        <h3>CSS</h3>
-        <pre><code>.rojo {
+        <section>
+            <h2>Selectores de clase (.)</h2>
+            <p>Coincide con elementos que tienen las clases especificadas</p>
+            <h3>CSS</h3>
+            <pre><code>.rojo {
     color: red;
 } </code></pre>
-        <h3>Javascript</h3>
-        <pre><code>document.querySelectorAll('.rojo')</code></pre>
-    </section>
+            <h3>Javascript</h3>
+            <pre><code>document.querySelectorAll('.rojo')</code></pre>
+            <a href="3-selectores-de-clase.html">Ejemplo</a>
+        </section>
 
-    <section>
-        <h2>Selectores de id (#)</h2>
-        <p>Coincide con elementos que tienen el id especificado</p>
-        <h3>CSS</h3>
-        <pre><code>#unico {
+        <section>
+            <h2>Selectores de id (#)</h2>
+            <p>Coincide con elementos que tienen el id especificado</p>
+            <h3>CSS</h3>
+            <pre><code>#unico {
     color: red;
 } </code></pre>
-        <h3>Javascript</h3>
-        <pre><code>document.querySelectorAll('#unico')</code></pre>
-    </section>
+            <h3>Javascript</h3>
+            <pre><code>document.querySelectorAll('#unico')</code></pre>
+            <a href="4-selectores-de-id.html">Ejemplo</a>
+        </section>
 
-    <section>
-        <h2>Selectores de atributo ([])</h2>
-        <p>Coincide con elementos que tienen el atributo especificado</p>
-        <h3>CSS</h3>
-        <pre><code>[href] {
+        <section>
+            <h2>Selectores de atributo ([])</h2>
+            <p>Coincide con elementos que tienen el atributo especificado</p>
+            <h3>CSS</h3>
+            <pre><code>[href] {
     color: red;
 } </code></pre>
-        <h3>Javascript</h3>
-        <pre><code>document.querySelectorAll('[href]')</code></pre>
-    </section>
+            <h3>Javascript</h3>
+            <pre><code>document.querySelectorAll('[href]')</code></pre>
+            <a href="5-selectores-de-atributo.html">Ejemplo</a>
+        </section>
 
-    <section>
-        <h2>Lista de selectores (,)</h2>
-        <p>Coincide con elementos especificados, separados por coma</p>
-        <h3>CSS</h3>
-        <pre><code>div, span {
+        <section>
+            <h2>Lista de selectores (,)</h2>
+            <p>Coincide con elementos especificados, separados por coma</p>
+            <h3>CSS</h3>
+            <pre><code>div, span {
     color: red;
 } </code></pre>
-        <h3>Javascript</h3>
-        <pre><code>document.querySelectorAll('div, span')</code></pre>
-    </section>
+            <h3>Javascript</h3>
+            <pre><code>document.querySelectorAll('div, span')</code></pre>
+            <a href="6-lista-de-selectores.html">Ejemplo</a>
+        </section>
 
-    <section>
-        <h2>Selector de descendientes ( )</h2>
-        <p>Coincide con el último elemento especificado, que es un descendiente de los elemento anteriores</p>
-        <h3>CSS</h3>
-        <pre><code>div span {
+        <section>
+            <h2>Selector de descendientes ( )</h2>
+            <p>Coincide con el último elemento especificado, que es un descendiente de los elemento anteriores</p>
+            <h3>CSS</h3>
+            <pre><code>div span {
     color: red;
 } </code></pre>
-        <h3>Javascript</h3>
-        <pre><code>document.querySelectorAll('div span')</code></pre>
-    </section>
+            <h3>Javascript</h3>
+            <pre><code>document.querySelectorAll('div span')</code></pre>
+            <a href="7-selector-de-descendientes.html">Ejemplo</a>
+        </section>
 
-    <section>
-        <h2>Selector de hijos (>)</h2>
-        <p>Coincide con el último elemento especificado, que es un hijo (o descendiente directo) de los elementos anteriores</p>
-        <h3>CSS</h3>
-        <pre><code>div > span {
+        <section>
+            <h2>Selector de hijos (>)</h2>
+            <p>Coincide con el último elemento especificado, que es un hijo (o descendiente directo) de los elementos
+                anteriores</p>
+            <h3>CSS</h3>
+            <pre><code>div > span {
     color: red;
 } </code></pre>
-        <h3>Javascript</h3>
-        <pre><code>document.querySelectorAll('div > span')</code></pre>
-    </section>
+            <h3>Javascript</h3>
+            <pre><code>document.querySelectorAll('div > span')</code></pre>
+            <a href="8-selector-de-hijos.html">Ejemplo</a>
+        </section>
 
-    <section>
-        <h2>Selector de hermanos (~)</h2>
-        <p>Coincide con el ultimo elemento especificado, que es un hermano de los elementos anteriores</p>
-        <h3>CSS</h3>
-        <pre><code>div ~ span {
+        <section>
+            <h2>Selector de hermanos (~)</h2>
+            <p>Coincide con el ultimo elemento especificado, que es un hermano de los elementos anteriores</p>
+            <h3>CSS</h3>
+            <pre><code>div ~ span {
     color: red;
 } </code></pre>
-        <h3>Javascript</h3>
-        <pre><code>document.querySelectorAll('div ~ span')</code></pre>
-    </section>
+            <h3>Javascript</h3>
+            <pre><code>document.querySelectorAll('div ~ span')</code></pre>
+            <a href="9-selector-de-hermanos.html">Ejemplo</a>
+        </section>
 
-    <section>
-        <h2>Selector de hermanos adyacentes (+)</h2>
-        <p>Coincide con el ultimo elemento especificado, que es un hermano adyacente (o inmediato) de los elementos anteriores</p>
-        <h3>CSS</h3>
-        <pre><code>div + span {
+        <section>
+            <h2>Selector de hermanos adyacentes (+)</h2>
+            <p>Coincide con el ultimo elemento especificado, que es un hermano adyacente (o inmediato) de los elementos
+                anteriores</p>
+            <h3>CSS</h3>
+            <pre><code>div + span {
     color: red;
 } </code></pre>
-        <h3>Javascript</h3>
-        <pre><code>document.querySelectorAll('div + span')</code></pre>
-    </section>
+            <h3>Javascript</h3>
+            <pre><code>document.querySelectorAll('div + span')</code></pre>
+            <a href="10-selector-de-hermanos-adyacentes.html">Ejemplo</a>
+        </section>
+    </main>
 </body>
+
 </html>

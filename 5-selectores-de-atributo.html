@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores de atributo ([])</title>
+    <style>
+        body {
+            min-height: 100vh;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            align-items: center;
+            font-size: 16px;
+        }
+    </style>
+    <style>
+        [href] {
+            color: #059669;
+            background-color: #D1FAE5;
+            padding: 8px;
+        }
+        [title] {
+            color: #2563EB;
+            background-color: #DBEAFE;
+            padding: 8px;
+        }
+        [title=Titulo] {
+            color: #DC2626;
+            background-color: #FEE2E2;
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Selectores de atributo ([])</h1>
+        <div>Soy un div</div>
+        <div class="elemento">Soy un div con una clase</div>
+        <div class="dos clases">Soy un div con dos clases</div>
+        <div class="tengo tres clases">Soy un div con tres clases</div>
+        <div id="gdgcde">Soy un div con el id gdgcde</div>
+        <a href="#">Soy un a con un atributo href</a>
+        <ul>
+            <li>Soy el primer li dentro de ul</li>
+            <li class="segundo-li">Soy el segundo li dentro de ul y tengo la clase segundo-li</li>
+            <li>Soy el tercer li dentro de ul</li>
+            <li>
+                <p>Soy un p dentro del cuarto li dentro de ul</p>
+            </li>
+        </ul>
+        <p title="Titulo">Soy un p con el title Titulo</p>
+        <p title="">Soy un p con un title vacío</p>
+    </div>
+    <script>
+        console.log(document.querySelectorAll('[title]'));
+    </script>
+</body>
+</html>

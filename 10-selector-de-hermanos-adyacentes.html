@@ -7,6 +7,7 @@
     <title>Selector de hermanos adyacentes</title>
     <style>
         body {
+            font-family: sans-serif;
             min-height: 100vh;
             max-width: 600px;
             margin-left: auto;
@@ -27,6 +28,13 @@
             background-color: #DBEAFE;
             padding: 8px;
         }
+        p + p {
+            font-size: 2rem;
+        }
+        a[href=\#] ~ ul > li.soy-una-clase > p#selectores {
+            color: red;
+            font-size: 1.5rem;
+        }
     </style>
 </head>
 <body>
@@ -46,12 +54,11 @@
             <li>Soy el primer li dentro de ul</li>
             <li class="segundo-li">Soy el segundo li dentro de ul y tengo la clase segundo-li</li>
             <li>Soy el tercer li dentro de ul</li>
-            <li>
-                <p>Soy un p dentro del cuarto li dentro de ul</p>
+            <li class="soy-una-clase">
+                <p id="selectores">Soy un p dentro del cuarto li dentro de ul</p>
             </li>
         </ul>
         <p title="Titulo">Soy un p con el title Titulo</p>
-        <ul></ul>
         <p title="">Soy un p con un title vacío</p>
     </div>
     <script>
